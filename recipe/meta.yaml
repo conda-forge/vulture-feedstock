@@ -34,6 +34,7 @@ test:
 about:
   home: https://bitbucket.org/jendrikseipp/vulture
   license: MIT
+  license_file: LICENSE.txt
   summary: 'Find dead code'
 
 extra:
