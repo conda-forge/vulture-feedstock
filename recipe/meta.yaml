@@ -1,6 +1,6 @@
 {% set name = "vulture" %}
-{% set version = "0.10" %}
-{% set sha256 = "9c2dc36b84f3729361990b4488b7fde1cbe5afb9e3b59456aafc6928684fcd4b" %}
+{% set version = "0.26" %}
+{% set sha256 = "89b0fae71c4b1f536c72f36e4f84d5e4f063d9b0bd54a5ace0d7725aabdf04a1" %}
 
 package:
   name: {{ name|lower }}
@@ -13,14 +13,15 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
-    - vulture = vulture:main
+    - vulture = vulture.core:main
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
@@ -34,6 +35,7 @@ test:
 about:
   home: https://bitbucket.org/jendrikseipp/vulture
   license: MIT
+  license_file: LICENSE.txt
   summary: 'Find dead code'
 
 extra:
