@@ -15,7 +15,7 @@ build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
-    - vulture = vulture:main
+    - vulture = vulture.core:main
 
 requirements:
   build:
