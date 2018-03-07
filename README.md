@@ -14,9 +14,7 @@ Summary: Find dead code
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/vulture-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vulture-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/vulture-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/vulture-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/vulture-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/vulture-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/vulture-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vulture-feedstock)
 
 Current release info
 ====================
