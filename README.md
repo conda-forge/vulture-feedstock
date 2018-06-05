@@ -1,7 +1,7 @@
 About vulture
 =============
 
-Home: https://bitbucket.org/jendrikseipp/vulture
+Home: https://github.com/jendrikseipp/vulture
 
 Package license: MIT
 
