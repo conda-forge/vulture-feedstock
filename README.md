@@ -14,12 +14,15 @@ Summary: Find dead code
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/vulture-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vulture-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/vulture-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/vulture-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vulture/badges/version.svg)](https://anaconda.org/conda-forge/vulture)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vulture/badges/downloads.svg)](https://anaconda.org/conda-forge/vulture)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-vulture-green.svg)](https://anaconda.org/conda-forge/vulture) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/vulture.svg)](https://anaconda.org/conda-forge/vulture) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/vulture.svg)](https://anaconda.org/conda-forge/vulture) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/vulture.svg)](https://anaconda.org/conda-forge/vulture) |
 
 Installing vulture
 ==================
