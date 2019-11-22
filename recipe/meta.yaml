@@ -1,6 +1,6 @@
 {% set name = "vulture" %}
-{% set version = "1.0" %}
-{% set sha256 = "4b5a8980c338e9c068d43e7164555a1e4c9c7d84961ce2bc6f3ed975f6e5bc9d" %}
+{% set version = "1.2" %}
+{% set sha256 = "c200a01ec47c05d75c5feffe096aeb85a4d3f0e18563be125fae72c13b584ea5" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - vulture = vulture.core:main
 
