@@ -30,6 +30,7 @@ test:
     - vulture
 
   commands:
+    - python -m pip check
     - vulture --help
 
 about:
