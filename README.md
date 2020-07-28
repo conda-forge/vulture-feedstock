@@ -5,7 +5,7 @@ Home: https://github.com/jendrikseipp/vulture
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Find dead code
 
