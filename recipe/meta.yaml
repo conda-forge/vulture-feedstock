@@ -1,6 +1,6 @@
 {% set name = "vulture" %}
-{% set version = "1.6" %}
-{% set sha256 = "7b94784ededbf8e2913b5142dc875d8f26de7c903b37cd2d8f478f79275f7ce9" %}
+{% set version = "2.0" %}
+{% set sha256 = "ab0dce458ab746212cc02ac10cf31912c43bbfdcccb49025745b00850beab086" %}
 
 package:
   name: {{ name|lower }}
