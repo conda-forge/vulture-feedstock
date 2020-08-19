@@ -1,6 +1,6 @@
 {% set name = "vulture" %}
-{% set version = "2.0" %}
-{% set sha256 = "ab0dce458ab746212cc02ac10cf31912c43bbfdcccb49025745b00850beab086" %}
+{% set version = "2.1" %}
+{% set sha256 = "933bf7f3848e9e39ecab6a12faa59d5185471c887534abac13baea6fe8138cc2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
