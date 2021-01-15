@@ -1,6 +1,6 @@
 {% set name = "vulture" %}
-{% set version = "2.0" %}
-{% set sha256 = "ab0dce458ab746212cc02ac10cf31912c43bbfdcccb49025745b00850beab086" %}
+{% set version = "2.2" %}
+{% set sha256 = "490085bb7fdea45d5d398ba2774ca18a825b47d034b79689c42071cbab7e84e4" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,7 @@ build:
     - vulture = vulture.core:main
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
