@@ -1,6 +1,6 @@
 {% set name = "vulture" %}
-{% set version = "2.0" %}
-{% set sha256 = "ab0dce458ab746212cc02ac10cf31912c43bbfdcccb49025745b00850beab086" %}
+{% set version = "2.4" %}
+{% set sha256 = "819439294a76b4e0b8e08c70d75565a8ce3dc1f6e03558ed123a5f2bb737c0ea" %}
 
 package:
   name: {{ name|lower }}
@@ -14,22 +14,25 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - vulture = vulture.core:main
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
+    - toml
 
 test:
+  requires:
+    - pip
   imports:
     - vulture
-
   commands:
+    - pip check
     - vulture --help
 
 about:
