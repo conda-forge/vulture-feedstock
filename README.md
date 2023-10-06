@@ -1,11 +1,11 @@
-About vulture
-=============
+About vulture-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vulture-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jendrikseipp/vulture
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vulture-feedstock/blob/main/LICENSE.txt)
 
 Summary: Find dead code
 
