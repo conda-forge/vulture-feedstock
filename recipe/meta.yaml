@@ -1,29 +1,27 @@
 {% set name = "vulture" %}
-{% set version = "2.7" %}
-{% set sha256 = "67fb80a014ed9fdb599dd44bb96cb54311032a104106fc2e706ef7a6dad88032" %}
+{% set version = "2.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vulture-{{ version }}.tar.gz
+  sha256: f0fbb60bce6511aad87ee0736c502456737490a82d919a44e6d92262cb35f1c2
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - vulture = vulture.core:main
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - toml
 
 test:
@@ -37,10 +35,12 @@ test:
 
 about:
   home: https://github.com/jendrikseipp/vulture
+  summary: Find dead code
   license: MIT
   license_file: LICENSE.txt
-  summary: Find dead code
 
 extra:
   recipe-maintainers:
+    - Zeitsperre
     - jakirkham
+    - rxm7706
