@@ -1,5 +1,5 @@
 {% set name = "vulture" %}
-{% set version = "2.11" %}
+{% set version = "2.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vulture-{{ version }}.tar.gz
-  sha256: f0fbb60bce6511aad87ee0736c502456737490a82d919a44e6d92262cb35f1c2
+  sha256: c35e98e992eb84b01cdadbfeb0aca2d44363e7dfe6c19416f65001ae69360ccc
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
   run:
     - python >=3.8
     - toml
