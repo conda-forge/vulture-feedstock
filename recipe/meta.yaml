@@ -1,13 +1,13 @@
 {% set name = "vulture" %}
-{% set version = "2.13" %}
+{% set version = "2.14" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vulture-{{ version }}.tar.gz
-  sha256: 78248bf58f5eaffcc2ade306141ead73f437339950f80045dce7f8b078e5a1aa
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vulture-{{ version }}.tar.gz
+  sha256: cb8277902a1138deeab796ec5bef7076a6e0248ca3607a3f3dee0b6d9e9b8415
 
 build:
   noarch: python
