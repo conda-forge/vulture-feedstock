@@ -14,20 +14,21 @@ build:
   entry_points:
     - vulture = vulture.core:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - toml
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - vulture
   commands:
