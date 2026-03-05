@@ -1,5 +1,5 @@
 {% set name = "vulture" %}
-{% set version = "2.14" %}
+{% set version = "2.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vulture-{{ version }}.tar.gz
-  sha256: cb8277902a1138deeab796ec5bef7076a6e0248ca3607a3f3dee0b6d9e9b8415
+  sha256: f9d8b4ce29c69950d323f21dceab4a4d6c694403dffbed7713c4691057e561fe
 
 build:
   noarch: python
   entry_points:
     - vulture = vulture.core:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
