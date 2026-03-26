@@ -1,5 +1,5 @@
 {% set name = "vulture" %}
-{% set version = "2.15" %}
+{% set version = "2.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vulture-{{ version }}.tar.gz
-  sha256: f9d8b4ce29c69950d323f21dceab4a4d6c694403dffbed7713c4691057e561fe
+  sha256: f8d9f6e2af03011664a3c6c240c9765b3f392917d3135fddca6d6a68d359f717
 
 build:
   noarch: python
@@ -20,7 +20,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools >=68.0
+    - wheel
   run:
     - python >={{ python_min }}
     - tomli >=1.1.0
@@ -30,7 +31,8 @@ test:
     - pip
     - python {{ python_min }}
   imports:
-    - vulture
+     - dev
+     - vulture
   commands:
     - pip check
     - vulture --help
