@@ -31,7 +31,8 @@ test:
     - pip
     - python {{ python_min }}
   imports:
-    - vulture
+     - dev
+     - vulture
   commands:
     - pip check
     - vulture --help
